@@ -1,5 +1,7 @@
 package entities;
 
+import java.util.List;
+
 public class Funcionario {
     private final int id;
     private final String nome;
@@ -11,6 +13,7 @@ public class Funcionario {
         this.nome = nome;
         this.salario = salario;
     }
+
 
     public int getId() {
         return id;
@@ -30,6 +33,8 @@ public class Funcionario {
     public void aumentoSalario(double porcentagem) {
         salario += salario * porcentagem / 100;
     }
+
+
 
 
 }
